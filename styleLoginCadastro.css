@@ -1,0 +1,142 @@
+/* styles.css */
+
+/* Add styles here to customize the appearance of your app */
+
+@font-face {
+    font-family: 'George' ;
+    src: url('GeorgeRoundedBold.woff2') format('woff2'),
+    url('GeorgeRoundedItalic.woff2') format('woff2'),
+    url('GeorgeRoundedBoldItalic.woff2') format('woff2'),
+    url('GeorgeRoundedLight.woff2') format('woff2'),
+    url('GeorgeRoundedLightItalic.woff2') format('woff2'),
+    url('GeorgeRoundedRegular.woff2') format('woff2'),
+    url('GeorgeRoundedSemibold.woff2') format('woff2'),
+    url('GeorgeRoundedSemiboldItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+ background-color: #eeee;
+
+}
+.logo_area{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 28px;
+}
+
+.card{
+    background-color: #E0E0E0;
+    padding: 40px;
+    border-radius: 4%;
+    width: 300px;
+}
+
+h1{
+    font-style: 'George';
+    text-align: center;
+    margin-bottom: 20px;
+    color: #888888;   
+}
+
+.label-float input{
+    color: #5c5c5c;
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #888888;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    color: #505050;
+    border-bottom: 2px solid #4200FF;
+}
+
+.label-float label{
+    color: #888888;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+
+}
+
+button{
+    background-color: #4200FF;
+    border-color: transparent;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 20px ;
+    margin-top: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    color: #eeee;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #210080;
+    color: #eeee;
+    transition: all .3s ease-out;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    margin-top: 10%;
+    color: #888888;
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+a{
+    color: #4200FF;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+}
+
+a:hover{
+    color: #210080;
+}
